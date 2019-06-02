@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*div.gallery {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            background-color: aqua;
+            overflow-x: hidden;
+        }*/
+
+        .gallery {
+            position: relative;
+            display: block;
+            width: 50%;
+            height: 50vh;
+            background-color: aqua;
+            overflow-x: hidden;
+            float: left;
+        }
+        
+        /*.gallery2 {
+            
+            position: relative;
+            display: block;
+            width: 50%;
+            height: 50vh;
+            background-color: aqua;
+            overflow-x: hidden;
+            float: left;
+        }*/
+
+
+        .f1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+        }
+
+        /*.f2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }*/
+
+        .n1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            transform: translateX(50vw);
+            transition: transform 0.5s;
+
+        }
+
+
+        .l1 {
+            position: absolute;
+            width: 12%;
+            top: 10%;
+            left: 5%;
+            transform: translateX(0);
+            transition: transform 0.5s;
+        }
+
+        /*.n2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            transform: translateX(50vw);
+            transition: transform 0.5s;
+        }
+
+
+        .l2 {
+            position: absolute;
+            width: 12%;
+            top: 10%;
+            left: 55%;
+            transform: translateX(0);
+            transition: transform 0.5s;
+        }*/
+
+        /*.f1:hover ~.f2, .f1:hover ~.l2,.n1:hover ~.f2, .n1:hover ~.l2{
+            transform: translateX(0);
+        }*/
+
+        .f1:hover~.n1,
+        .n1:hover {
+            transform: translateX(0);
+        }
+
+        .n1:hover~.l1,
+        .f1:hover~.l1,
+        .l1:hover {
+            transform: translateX(-50vw);
+        }
+
+        .f2:hover~.n2,
+        .n2:hover {
+            transform: translateX(0);
+        }
+
+        .n2:hover~.l2,
+        .f2:hover~.l2,
+        .l2:hover {
+            transform: translateX(-50vw);
+        }
+    </style>
+</head>
+
+<body>   
+    <div>
+        <a href="" class="gallery">
+            <img src="img/f1.png" alt="Герман" class="f1">
+            <img src="img/n1.png" alt="Герман" class="n1">
+            <img src="img/l1.jpg" alt="Герман" class="l1">
+        </a>
+        <a href="" class="gallery">
+            <img src="img/f2.png" alt="Герман" class="f1">
+            <img src="img/n1.png" alt="Герман" class="n1">
+            <img src="img/l1.jpg" alt="Герман" class="l1">
+        </a>
+        <a href="" class="gallery">
+            <img src="img/f1.png" alt="Герман" class="f1">
+            <img src="img/n1.png" alt="Герман" class="n1">
+            <img src="img/l1.jpg" alt="Герман" class="l1">
+        </a>
+        <a href="" class="gallery">
+            <img src="img/f2.png" alt="Герман" class="f1">
+            <img src="img/n1.png" alt="Герман" class="n1">
+            <img src="img/l1.jpg" alt="Герман" class="l1">
+        </a>
+    </div>       
+</body>
+</html>
